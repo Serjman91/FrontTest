@@ -1,0 +1,59 @@
+$base-color = rgb(255, 130, 7)
+$content-width = 1398px
+$text-width = 820px
+$text-color = rgb(40, 54, 61)
+.ourWork
+  padding 30px 0 50px
+  background url("/../img/ourwork/bg-ourWork.png")
+.ourWork-content
+.advantages-content
+.feedback-content
+  display flex
+  justify-content center
+  flex-direction: column
+  align-items center
+  color $text-color
+  text-transform uppercase
+  text-align center
+.ourWork-content h1
+.advantages-content h1
+.feedback-content h1
+  margin-bottom 20px
+.ourWork-content__text>p
+.advantages-content__text>p
+.feedback-content__text>p
+  text-transform none
+  color #8198a0
+  font-size 18px
+  width $text-width
+.ourWork-content__works
+.advantages-content__works
+  width $content-width
+.portfolio-blok
+  width 33%
+  padding 10px
+  display inline-block
+  overflow hidden
+  position relative
+  cursor pointer
+.portfolio-blok>img
+  width 100%
+.portfolio-blok__hover
+  display flex
+  justify-content left
+  flex-direction: column
+  align-items left
+  left 10PX
+  bottom 10PX
+  width 95.7%
+  height 0
+  background #d4d7d8
+  overflow hidden
+  position absolute
+  padding 0 65px
+  z-index 2
+.portfolio-blok
+  &:hover
+    .portfolio-blok__hover
+      height: 120px;
+      transition: all ease-out .30s;

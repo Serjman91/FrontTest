@@ -1,0 +1,30 @@
+mixin name(classname, href, name)
+    li(class= classname)
+        a(href= href)= name
+header
+    .header
+        .mobile-nav
+            a(href="#" class="navPanelToggle")
+                span(class="fa fa-bars")
+            ul#mobileNav.mobileNav
+                +name('portable-nav','#general','главная')
+                +name('portable-nav','#portfolio','портфолио')
+                +name('portable-nav','#advantages','преимущества')
+                +name('portable-nav','#schema','схема работы')
+                +name('portable-nav','#feedback','отзывы')
+                +name('portable-nav','#contacts','контакты')
+        .header-logo
+            img(src='img/logo.png')
+        .header-nav
+            ul#nav
+                +name('header-nav','#general','главная')
+                +name('header-nav','#portfolio','портфолио')
+                +name('header-nav','#advantages','преимущества')
+                +name('header-nav','#schema','схема работы')
+                +name('header-nav','#feedback','отзывы')
+                +name('header-nav','#contacts','контакты')
+        .header-phones
+            p
+                a(href="#") +375 29 123-45-67
+            p
+            a(href="#") +375 29 123-45-67

@@ -1,0 +1,21 @@
+mixin  slider(slide, header, text_1, text_2)
+    div(class= 'general-slide ' + slide)
+        div(class= 'general-content')
+            h1= header
+            div(class= 'genreal-underline')
+                div(class= 'general-underline__line')
+                div(class= 'general-underline__rhombus')
+                div(class= 'general-underline__line')
+            p= text_1
+            p= text_2
+div(class= "general")
+    div(class= 'button general-button' id="general-button") оформить заявку
+    div(class= "to-next-block" id= 'moveDown')
+        a(href= '#')
+            img(src= 'img/slider/bottomArrow.png')
+    div(class= "owl-carousel owl-theme")
+        +slider('slide-1', 'главный заголовок', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua.')
+        +slider('slide-2', 'Привеветствие вам', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore', ' et doloremagna aliqua.')
+        +slider('slide-3', 'здравствуйте все!', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ut labore et doloremagna', 'aliqua.')
+        +slider('slide-4', 'Доброго денёчка!', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do', 'doloremagna aliqua.')
+        +slider('slide-5', 'Купите что-нибудь', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit ut labore et', 'aliqua.')

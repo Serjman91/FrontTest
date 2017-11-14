@@ -1,0 +1,33 @@
+mixin address(key, value)
+    h2= key
+    p= value
+div(class= "feedback")
+    div(class= "feedback-content")
+        div(class= "feedback-content__text")
+            h1 оставьте отзыв
+            img(src= "img/separator.png")
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua.
+        div(class= "feedback-content__info")
+            div(class= "feedback-address")
+                +address('наш ардес', 'г.Минск, ул. Скрыганова, 6А, 4 этаж' )
+                +address('звоните', '+375 (29) 123-45-67,  +375 (33) 123-45-67' )
+                +address('пишите', 'info@promo-webcom.by' )
+            div(class= "feedback-contactForm")
+                form
+                    div#form-inner
+                        label(for= "name") ваше имя
+                        input(type="text" class="input" id="name" placeholder="Иванов Иван" required)
+                        label(for="email") E-mail
+                        input(type="email" class="input" id="email" placeholder="example@email.com" required)
+                        label(for="position") ваша должность
+                        input(type="position" class="input" id="position" placeholder="Должность" required)
+                        label(for="message") отзыв
+                        textarea(class="input textarea" id="message" placeholder="Ваше сообщение" required)
+                        div(class= "file")
+                            div(class= "button input-button") +
+                            h2 фото
+                        h2 введите код с картинки
+                        input(type="text" class="input" id="kapcha")
+                        div(class= "kapcha")
+                            img(src= "img/kapcha.png")
+                            input(type="submit" class= "button submit-button" value="ОТПРАВИТЬ")

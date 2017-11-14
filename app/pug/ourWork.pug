@@ -1,0 +1,20 @@
+mixin  portfolio(src, name, description)
+    div(class= 'portfolio-blok')
+        img(src= src)
+        div(class= 'portfolio-blok__hover')
+            h3= name
+            img(src= "img/separator.png")
+            p= description
+div(class= "ourWork")
+    div(class= "ourWork-content")
+        div(class= "ourWork-content__text")
+            h1 наша работа
+            img(src= "img/separator.png")
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua.
+        div(class= "ourWork-content__works")
+            +portfolio('img/portfolio/portfolio.png', 'название работы 1', 'опиcание работы тоже 1')
+            +portfolio('img/portfolio/portfolio.png', 'название работы 2', 'опиcание работы тоже 2')
+            +portfolio('img/portfolio/portfolio.png', 'название работы 3', 'опиcание работы тоже 3')
+            +portfolio('img/portfolio/portfolio.png', 'название работы 4', 'опиcание работы тоже 4')
+            +portfolio('img/portfolio/portfolio.png', 'название работы 5', 'опиcание работы тоже 5')
+            +portfolio('img/portfolio/portfolio.png', 'название работы 6', 'опиcание работы тоже 6')

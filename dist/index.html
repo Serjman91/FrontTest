@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.extensions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/jquery.easings.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="mobile-nav"><a class="navPanelToggle" href="#"><span class="fa fa-bars"></span></a>
+          <ul class="mobileNav" id="mobileNav">
+                <li class="portable-nav"><a href="#general">главная</a></li>
+                <li class="portable-nav"><a href="#portfolio">портфолио</a></li>
+                <li class="portable-nav"><a href="#advantages">преимущества</a></li>
+                <li class="portable-nav"><a href="#schema">схема работы</a></li>
+                <li class="portable-nav"><a href="#feedback">отзывы</a></li>
+                <li class="portable-nav"><a href="#contacts">контакты</a></li>
+          </ul>
+        </div>
+        <div class="header-logo"><img src="img/logo.png"></div>
+        <div class="header-nav">
+          <ul id="nav">
+                <li class="header-nav"><a href="#general">главная</a></li>
+                <li class="header-nav"><a href="#portfolio">портфолио</a></li>
+                <li class="header-nav"><a href="#advantages">преимущества</a></li>
+                <li class="header-nav"><a href="#schema">схема работы</a></li>
+                <li class="header-nav"><a href="#feedback">отзывы</a></li>
+                <li class="header-nav"><a href="#contacts">контакты</a></li>
+          </ul>
+        </div>
+        <div class="header-phones">
+          <p><a href="#">+375 29 123-45-67</a></p>
+          <p></p><a href="#">+375 29 123-45-67</a>
+        </div>
+      </div>
+    </header>
+    <div id="fullpage">
+      <div class="up-button" id="up-button"></div>
+      <div class="section fp-auto-height" id="section0">
+        <!--modal window for make a request-->
+        <div class="modal-window" id="modal-window">
+          <form>
+            <h2>Оформить заявку</h2>
+            <input type="text" placeholder="Имя" required>
+            <input type="email" placeholder="example@mail.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$" required>
+            <input type="tel" pattern="+375-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер телефона +375-xx-xxx-xx-xx" required>
+            <div>
+              <input class="modal__argee__button" type="submit" value="Отправить">
+              <div class="modal__cancel__button">Отмена</div>
+            </div>
+          </form>
+        </div>
+        <div class="general">
+          <div class="button general-button" id="general-button">оформить заявку</div>
+          <div class="to-next-block" id="moveDown"><a href="#"><img src="img/slider/bottomArrow.png"></a></div>
+          <div class="owl-carousel owl-theme">
+                    <div class="general-slide slide-1">
+                      <div class="general-content">
+                        <h1>главный заголовок</h1>
+                        <div class="genreal-underline">
+                          <div class="general-underline__line"></div>
+                          <div class="general-underline__rhombus"></div>
+                          <div class="general-underline__line"></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                        <p>ut labore et doloremagna aliqua.</p>
+                      </div>
+                    </div>
+                    <div class="general-slide slide-2">
+                      <div class="general-content">
+                        <h1>Привеветствие вам</h1>
+                        <div class="genreal-underline">
+                          <div class="general-underline__line"></div>
+                          <div class="general-underline__rhombus"></div>
+                          <div class="general-underline__line"></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore</p>
+                        <p> et doloremagna aliqua.</p>
+                      </div>
+                    </div>
+                    <div class="general-slide slide-3">
+                      <div class="general-content">
+                        <h1>здравствуйте все!</h1>
+                        <div class="genreal-underline">
+                          <div class="general-underline__line"></div>
+                          <div class="general-underline__rhombus"></div>
+                          <div class="general-underline__line"></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ut labore et doloremagna</p>
+                        <p>aliqua.</p>
+                      </div>
+                    </div>
+                    <div class="general-slide slide-4">
+                      <div class="general-content">
+                        <h1>Доброго денёчка!</h1>
+                        <div class="genreal-underline">
+                          <div class="general-underline__line"></div>
+                          <div class="general-underline__rhombus"></div>
+                          <div class="general-underline__line"></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+                        <p>doloremagna aliqua.</p>
+                      </div>
+                    </div>
+                    <div class="general-slide slide-5">
+                      <div class="general-content">
+                        <h1>Купите что-нибудь</h1>
+                        <div class="genreal-underline">
+                          <div class="general-underline__line"></div>
+                          <div class="general-underline__rhombus"></div>
+                          <div class="general-underline__line"></div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ut labore et</p>
+                        <p>aliqua.</p>
+                      </div>
+                    </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="section1">
+        <div class="ourWork">
+          <div class="ourWork-content">
+            <div class="ourWork-content__text">
+              <h1>наша работа</h1><img src="img/separator.png">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua.</p>
+            </div>
+            <div class="ourWork-content__works">
+                      <div class="portfolio-blok"><img src="img/portfolio/portfolio.png">
+                        <div class="portfolio-blok__hover">
+                          <h3>название работы 1</h3><img src="img/separator.png">
+                          <p>опиcание работы тоже 1</p>
+                        </div>
+                      </div>
+                      <div class="portfolio-blok"><img src="img/portfolio/portfolio.png">
+                        <div class="portfolio-blok__hover">
+                          <h3>название работы 2</h3><img src="img/separator.png">
+                          <p>опиcание работы тоже 2</p>
+                        </div>
+                      </div>
+                      <div class="portfolio-blok"><img src="img/portfolio/portfolio.png">
+                        <div class="portfolio-blok__hover">
+                          <h3>название работы 3</h3><img src="img/separator.png">
+                          <p>опиcание работы тоже 3</p>
+                        </div>
+                      </div>
+                      <div class="portfolio-blok"><img src="img/portfolio/portfolio.png">
+                        <div class="portfolio-blok__hover">
+                          <h3>название работы 4</h3><img src="img/separator.png">
+                          <p>опиcание работы тоже 4</p>
+                        </div>
+                      </div>
+                      <div class="portfolio-blok"><img src="img/portfolio/portfolio.png">
+                        <div class="portfolio-blok__hover">
+                          <h3>название работы 5</h3><img src="img/separator.png">
+                          <p>опиcание работы тоже 5</p>
+                        </div>
+                      </div>
+                      <div class="portfolio-blok"><img src="img/portfolio/portfolio.png">
+                        <div class="portfolio-blok__hover">
+                          <h3>название работы 6</h3><img src="img/separator.png">
+                          <p>опиcание работы тоже 6</p>
+                        </div>
+                      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="section2">
+        <div class="advantages">
+          <div class="advantages-content">
+            <div class="advantages-content__text">
+              <h1>почему мы</h1><img src="img/separator.png">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua.</p>
+            </div>
+            <div class="advantages-content__works">
+                      <div class="advantages-blok"><img src="img/advantages/advantages.png">
+                        <h3>Преимущество 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                      </div>
+                      <div class="advantages-blok"><img src="img/advantages/advantages.png">
+                        <h3>Преимущество 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                      </div>
+                      <div class="advantages-blok"><img src="img/advantages/advantages.png">
+                        <h3>Преимущество 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                      </div>
+                      <div class="advantages-blok"><img src="img/advantages/advantages.png">
+                        <h3>Преимущество 4</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                      </div>
+                      <div class="advantages-blok"><img src="img/advantages/advantages.png">
+                        <h3>Преимущество 5</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                      </div>
+                      <div class="advantages-blok"><img src="img/advantages/advantages.png">
+                        <h3>Преимущество 6</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                      </div>
+                      <div class="advantages-blok"><img src="img/advantages/advantages.png">
+                        <h3>Преимущество 6</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                      </div>
+                      <div class="advantages-blok"><img src="img/advantages/advantages.png">
+                        <h3>Преимущество 6</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section fp-auto-height" id="section3">
+        <div class="feedback">
+          <div class="feedback-content">
+            <div class="feedback-content__text">
+              <h1>оставьте отзыв</h1><img src="img/separator.png">
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua.</p>
+            </div>
+            <div class="feedback-content__info">
+              <div class="feedback-address">
+                        <h2>наш ардес</h2>
+                        <p>г.Минск, ул. Скрыганова, 6А, 4 этаж</p>
+                        <h2>звоните</h2>
+                        <p>+375 (29) 123-45-67,  +375 (33) 123-45-67</p>
+                        <h2>пишите</h2>
+                        <p>info@promo-webcom.by</p>
+              </div>
+              <div class="feedback-contactForm">
+                <form>
+                  <div id="form-inner">
+                    <label for="name">ваше имя</label>
+                    <input class="input" type="text" id="name" placeholder="Иванов Иван" required>
+                    <label for="email">E-mail</label>
+                    <input class="input" type="email" id="email" placeholder="example@email.com" required>
+                    <label for="position">ваша должность</label>
+                    <input class="input" type="position" id="position" placeholder="Должность" required>
+                    <label for="message">отзыв</label>
+                    <textarea class="input textarea" id="message" placeholder="Ваше сообщение" required></textarea>
+                    <div class="file">
+                      <div class="button input-button">+</div>
+                      <h2>фото</h2>
+                    </div>
+                    <h2>введите код с картинки</h2>
+                    <input class="input" type="text" id="kapcha">
+                    <div class="kapcha"><img src="img/kapcha.png">
+                      <input class="button submit-button" type="submit" value="ОТПРАВИТЬ">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contacts-content">
+            <div class="contacts-logo"><img class="logo" src="img/logo.png">
+              <div><img src="img/separator.png"></div>
+              <p>Дисклеймер компании</p>
+            </div>
+            <div class="contacts-social">
+              <h2>мы в соцетях</h2>
+              <div><img src="img/separator.png"></div><img class="social" src="img/footer/insta.png"><img class="social" src="img/footer/tw.png"><img class="social" src="img/footer/fb.png">
+            </div>
+            <div class="contacts-address">
+              <h2>адрес</h2>
+              <div><img src="img/separator.png"></div>
+              <p>г. Минск, ул. Скрыганова, 6А, 4 этаж</p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>Copyrights 2015 © Webcom Media</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

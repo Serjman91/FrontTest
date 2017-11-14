@@ -1,0 +1,19 @@
+doctype html
+html
+    include head.pug
+    body
+        include header.pug
+        #fullpage
+            div(class= "up-button" id= "up-button")
+
+            div(class= "section fp-auto-height" id= "section0")
+                //modal window for make a request
+                include modal.pug
+                include general.pug
+            div(class= "section" id= "section1")
+                include ourWork.pug
+            div(class= "section" id= "section2")
+                include advantages.pug
+            div(class= "section fp-auto-height" id= "section3")
+                include feedBack.pug
+                include contacts.pug

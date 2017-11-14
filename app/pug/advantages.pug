@@ -1,0 +1,20 @@
+mixin  advantages(src, name, description)
+    div(class= 'advantages-blok')
+        img(src= src)
+        h3= name
+        p= description
+div(class= "advantages")
+    div(class= "advantages-content")
+        div(class= "advantages-content__text")
+            h1 почему мы
+            img(src= "img/separator.png")
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt', 'ut labore et doloremagna aliqua.
+        div(class= "advantages-content__works")
+            +advantages('img/advantages/advantages.png', 'Преимущество 1', 'Lorem ipsum dolor sit amet, consectetur adipisicing')
+            +advantages('img/advantages/advantages.png', 'Преимущество 2', 'Lorem ipsum dolor sit amet, consectetur adipisicing')
+            +advantages('img/advantages/advantages.png', 'Преимущество 3', 'Lorem ipsum dolor sit amet, consectetur adipisicing')
+            +advantages('img/advantages/advantages.png', 'Преимущество 4', 'Lorem ipsum dolor sit amet, consectetur adipisicing')
+            +advantages('img/advantages/advantages.png', 'Преимущество 5', 'Lorem ipsum dolor sit amet, consectetur adipisicing')
+            +advantages('img/advantages/advantages.png', 'Преимущество 6', 'Lorem ipsum dolor sit amet, consectetur adipisicing')
+            +advantages('img/advantages/advantages.png', 'Преимущество 6', 'Lorem ipsum dolor sit amet, consectetur adipisicing')
+            +advantages('img/advantages/advantages.png', 'Преимущество 6', 'Lorem ipsum dolor sit amet, consectetur adipisicing')

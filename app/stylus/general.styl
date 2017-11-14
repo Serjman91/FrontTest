@@ -1,0 +1,105 @@
+$base-color = rgb(255, 130, 7)
+$content-width = 1398px
+$text-width = 820px
+$text-color = rgb(40, 54, 61)
+.general
+  position relative
+.general-slide
+  display flex
+  justify-content center
+  height 100vh
+  max-height 1080px
+  border-bottom 4px solid $base-color
+.slide-1
+.slide-2
+.slide-3
+.slide-4
+.slide-5
+  background url("/../img/slider/bg-slider.png")
+  position relative
+.general-content
+  color $text-color
+  width 940px
+  text-transform uppercase
+  text-align center
+  padding-top 140px
+.general-content h1
+.ourWork-content h1
+.advantages-content h1
+.feedback-content h1
+  letter-spacing 20px
+  margin-bottom 55px
+  font-size 46px
+.general-content p
+  width $text-width
+  letter-spacing 2px
+  margin 0 auto
+  line-height 30px
+  font-size 24px
+.genreal-underline
+  margin-bottom 55px
+.general-underline__line
+.general-underline__rhombus
+  display inline-block
+  background $text-color
+.general-underline__line
+  width 47%
+  height 2px
+  margin 8px 0
+.general-underline__rhombus
+  width 10px
+  height 10px
+  margin 5px
+  transform rotate(45deg)
+.button
+  cursor pointer
+  color white
+  border-radius 10px
+  background-color $base-color
+  font-size 32px
+  padding 23px 0
+  letter-spacing 2px
+  &:hover
+    background-color darken($base-color, 20)
+.general-button
+  position absolute
+  left 50%
+  bottom 30%
+  transform translateX(-50%)
+  width 410px
+  z-index 9
+  text-transform uppercase
+  text-align center
+.owl-dots
+  position absolute
+  bottom 15%
+  left 50%
+  transform translateX(-50%)
+  z-index 1
+.owl-dot
+  span
+    background-color $text-color !important
+    width 20px !important
+    height 20px !important
+.owl-dot.active
+  span
+    background-color $base-color !important
+.owl-nav
+  position absolute
+  top 50%
+  transform translateY(-50%)
+.owl-prev
+.owl-next
+  background none !important
+  position absolute
+  &:hover
+    background none !important
+.owl-next
+  right -1570px
+.owl-prev
+  left 350px
+.to-next-block
+  position absolute
+  right 48.6%
+  bottom 5%
+  z-index 10
